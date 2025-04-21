@@ -8,8 +8,9 @@ author:
   avatar: "/assets/images/wanjin.jpg"
   bio: "꾸준히 기록 공유하는 개발자"
 
+# Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -22,15 +23,16 @@ defaults:
     values:
       layout: single
 
+# Navigation 설정
 navigation:
   - title: "파이썬"
-    url: "{{ site.baseurl }}/categories/python/"
+    url: /categories/python/
   - title: "자바스크립트"
-    url: "{{ site.baseurl }}/categories/javascript/"
+    url: /categories/javascript/
   - title: "일상"
-    url: "{{ site.baseurl }}/categories/일상/"
+    url: /categories/일상/
     children:
       - title: "운동"
-        url: "{{ site.baseurl }}/categories/일상/운동/"
+        url: /categories/일상/운동/
       - title: "항암"
-        url: "{{ site.baseurl }}/categories/일상/항암/"
+        url: /categories/일상/항암/
