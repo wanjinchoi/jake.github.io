@@ -1,34 +1,13 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: "완진의 개발 및 일상 블로그"
 description: "개발, 일상, 다양한 기록을 남기는 공간입니다."
-url: "https://wanjinchoi.github.io/jake.github.io"
-baseurl: ""
+url: "https://wanjinchoi.github.io"
+baseurl: "/jake.github.io"
 
 author:
   name: "wanjinchoi"
-  avatar: "/assets/images/wanjin.jpg"  # 나중에 프로필 사진 경로
+  avatar: "/assets/images/wanjin.jpg"
   bio: "꾸준히 기록 공유하는 개발자"
 
-# Build settings
 markdown: kramdown
 theme: minimal-mistakes-jekyll
 plugins:
@@ -36,8 +15,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-
-# _config.yml 파일 제일 하단에 추가
 defaults:
   - scope:
       path: ""
@@ -45,36 +22,15 @@ defaults:
     values:
       layout: single
 
-# Navigation 설정
 navigation:
   - title: "파이썬"
-    url: /categories/python/
+    url: "{{ site.baseurl }}/categories/python/"
   - title: "자바스크립트"
-    url: /categories/javascript/
+    url: "{{ site.baseurl }}/categories/javascript/"
   - title: "일상"
-    url: /categories/일상/
-    children:   # <- 오타 고쳤음(childern ❌ → children ⭕)
+    url: "{{ site.baseurl }}/categories/일상/"
+    children:
       - title: "운동"
-        url: /categories/일상/운동/
+        url: "{{ site.baseurl }}/categories/일상/운동/"
       - title: "항암"
-        url: /categories/일상/항암/
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+        url: "{{ site.baseurl }}/categories/일상/항암/"
