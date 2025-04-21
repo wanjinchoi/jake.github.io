@@ -19,14 +19,14 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "완진의 개발 및 일상 블로그"
-description: "개발 및 일상 꿀팁을 올리는 블로그립니다."
-url: "https://wanjinchoi.github.io/jake.github.io"  # 깃헙 페이지 주소
-baseurl: "/jake.github.io"  # 레포 이름이 'jake.github.io'니까 꼭 써야 돼
+description: "개발, 일상, 다양한 기록을 남기는 공간입니다."
+url: "https://wanjinchoi.github.io/jake.github.io"
+baseurl: ""
 
 author:
   name: "wanjinchoi"
-  avatar: "/C:/Users/vivans/myblog/wanjin.jpg"  # 나중에 프로필 사진 경로
-  bio: "열정과 끈기로!!"
+  avatar: "/assets/images/wanjin.jpg"  # 나중에 프로필 사진 경로
+  bio: "꾸준히 기록 공유하는 개발자"
 
 # Build settings
 markdown: kramdown
@@ -35,6 +35,29 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+
+# _config.yml 파일 제일 하단에 추가
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+
+# Navigation 설정
+navigation:
+  - title: "파이썬"
+    url: /categories/python/
+  - title: "자바스크립트"
+    url: /categories/javascript/
+  - title: "일상"
+    url: /categories/일상/
+    children:   # <- 오타 고쳤음(childern ❌ → children ⭕)
+      - title: "운동"
+        url: /categories/일상/운동/
+      - title: "항암"
+        url: /categories/일상/항암/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

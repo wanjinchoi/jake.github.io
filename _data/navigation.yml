@@ -1,0 +1,12 @@
+main:
+  - title: "파이썬"
+    url: /categories/python/
+  - title: "자바스크립트"
+    url: /categories/javascript/
+  - title: "일상"
+    url: /categories/일상/
+    children:
+      - title: "운동"
+        url: /categories/일상/운동/
+      - title: "항암"
+        url: /categories/일상/항암/

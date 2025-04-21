@@ -1,0 +1,21 @@
+.nav__sub-list {
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 10px;
+  list-style: none;
+  z-index: 1000;
+  border: 1px solid #ddd;
+}
+
+.has-children:hover > .nav__sub-list {
+  display: block;
+}
+
+.nav__list-item {
+  position: relative;
+}
+
+.nav__sub-list-item {
+  margin: 5px 0;
+}
