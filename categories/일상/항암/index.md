@@ -6,5 +6,6 @@ taxonomy: categories
 category: 항암
 ---
 
-### 항암 카테고리 포스트
-항암 관련 기록입니다.
+{% for post in site.categories.항암 %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}

@@ -6,5 +6,6 @@ taxonomy: categories
 category: 운동
 ---
 
-### 운동 카테고리 포스트
-운동 관련 기록입니다.
+{% for post in site.categories.운동 %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
