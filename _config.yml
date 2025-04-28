@@ -1,7 +1,7 @@
 title: "완진의 개발 및 일상 블로그"
 description: "개발, 일상, 다양한 기록을 남기는 공간입니다."
 url: "https://wanjinchoi.github.io"
-baseurl: ""
+baseurl: "/jake.github.io"
 
 author:
   name: "wanjinchoi"
@@ -26,14 +26,14 @@ defaults:
 # Navigation 설정
 navigation:
   - title: "파이썬"
-    url: /categories/python/
+    url: "{{ site.baseurl }}/categories/python/"
   - title: "자바스크립트"
-    url: /categories/javascript/
+    url: "{{ site.baseurl }}/categories/javascript/"
   - title: "일상"
-    url: /categories/일상/
+    url: "{{ site.baseurl }}/categories/일상/"
     children:
       - title: "운동"
-        url: /categories/일상/운동/
+        url: "{{ site.baseurl }}/categories/일상/운동/"
       - title: "항암"
-        url: /categories/일상/항암/
+        url: "{{ site.baseurl }}/categories/일상/항암/"
 future: true
