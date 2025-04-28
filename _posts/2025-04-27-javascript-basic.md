@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "파이썬 기초 다지기"
-date: 2025-04-21 17:30:00 +0900
+title: "자바스크립트 기초 다지기"
+date: 2025-04-27 18:00:00 +0900
 categories: [javascript]
 tags: [javascript, beginner]
 ---
