@@ -6,16 +6,11 @@ taxonomy: categories
 category: 일상
 ---
 
-# 🏡 일상 카테고리
+### 일상 카테고리 포스트
 
-## 하위 카테고리
-- [운동 카테고리](/categories/일상/운동/)
-- [항암 카테고리](/categories/일상/항암/)
-
----
-
-## 📝 일상에 속한 글 목록
-
-{% for post in site.categories.일상 %}
-- [{{ post.title }}]({{ post.url }})
+<ul>
+{% assign posts = site.categories['일상'] %}
+{% for post in posts %}
+  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 {% endfor %}
+</ul>
